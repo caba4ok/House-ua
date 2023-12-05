@@ -126,7 +126,8 @@ header {
     color: #b1b1d2;
     text-decoration: none;
 }
-.header-line a:hover{
+
+.header-line a:hover {
     color: #fd8300;
 }
 
@@ -153,13 +154,16 @@ a.inst {
     height: 20px;
     background-position: -35px -3px;
 }
-a.fb:hover{
+
+a.fb:hover {
     background-position: -2px -22px;
 }
-a.tw:hover{
+
+a.tw:hover {
     background-position: -14px -23px;
 }
-a.inst:hover{
+
+a.inst:hover {
     background-position: -35px -23px;
 }
 
@@ -244,7 +248,8 @@ a.inst:hover{
     padding: 12px 28px;
     display: inline-block;
 }
-.cta a:hover{
+
+.cta a:hover {
     transform: scaleX(1.1) scaleY(1.2);
     color: #fff;
     background-color: #fd8300;
@@ -275,6 +280,8 @@ a.inst:hover{
     color: #ffffff;
     font-family: "Arial";
     text-align: center;
+    padding-top: 12px;
+    padding-bottom: 17px;
 }
 
 .cost {
@@ -317,7 +324,8 @@ a.inst:hover{
     color: #fd8300;
     font-weight: bold;
 }
-.about-company a:hover{
+
+.about-company a:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 5px #ffbb72);
 }
@@ -346,11 +354,7 @@ a.inst:hover{
     font-family: "Roboto Slab";
 }
 
-/* .menuchoose li {
-} */
-
-.sidebar a,
-.arrow {
+.sidebar a {
     position: relative;
     padding: 11px 16px;
     display: block;
@@ -379,9 +383,21 @@ a.inst:hover{
     color: #ffffff;
 }
 
+.navigation {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
 .sidebar li:hover>.arrow::after {
     border-color: #fff;
     transform: translateY(-50%) rotate(45deg);
+}
+
+.sidebar li + li > a {
+    border-top: 1px solid #cdcddd;
+}
+.sidebar:last-child{
+    border: none
 }
 
 .submenu {
@@ -395,9 +411,10 @@ a.inst:hover{
     transition: max-height 1s ease;
 }
 
-.submenu a {
+.submenu li > a {
     padding: 18px 31px;
     color: #666666;
+    border: none;
 }
 
 .submenu a:hover {
@@ -411,7 +428,7 @@ a.inst:hover{
 
 .house:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px 15px #f0f0f0;
+    border-radius: 8px;
 }
 
 .house a {
