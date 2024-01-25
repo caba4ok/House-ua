@@ -316,7 +316,8 @@ a.inst:hover {
     margin-bottom: 25px;
 }
 
-.about-company a {
+.about-company a,
+.price_footer a {
     transition: all 1s ease-out;
     display: inline-block;
     font-size: 14px;
@@ -325,7 +326,8 @@ a.inst:hover {
     font-weight: bold;
 }
 
-.about-company a:hover {
+.about-company a:hover,
+.price_footer a:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 5px #ffbb72);
 }
@@ -340,8 +342,6 @@ a.inst:hover {
 
 .menuchoose {
     width: 100%;
-    border-radius: 3px;
-    overflow: hidden;
 }
 
 .menuchoose p {
@@ -384,6 +384,9 @@ a.inst:hover {
 }
 
 .navigation {
+    position: sticky;
+    top: 55px;
+    width: 100%;
     border-radius: 3px;
     overflow: hidden;
 }
@@ -393,12 +396,10 @@ a.inst:hover {
     transform: translateY(-50%) rotate(45deg);
 }
 
-.sidebar li + li > a {
+.sidebar li+li>a {
     border-top: 1px solid #cdcddd;
 }
-.sidebar:last-child{
-    border: none
-}
+
 
 .submenu {
     visibility: hidden;
@@ -411,7 +412,7 @@ a.inst:hover {
     transition: max-height 1s ease;
 }
 
-.submenu li > a {
+.submenu li>a {
     padding: 18px 31px;
     color: #666666;
     border: none;
@@ -479,4 +480,100 @@ a.inst:hover {
 .footer-bottom p {
     text-align: center;
     color: #9999a6;
+}
+
+.price_header h2 {
+    padding-bottom: 22px;
+    color: #24242b;
+    font-weight: 700;
+}
+
+.price_header p {
+    margin-bottom: 26px;
+}
+
+.price p,
+.price_footer p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.price_main table {
+    width: 100%;
+    padding-top: 26px;
+    border-collapse: collapse;
+}
+
+.price_main thead {
+    border-radius: 3px;
+    background-color: #1f1f56;
+}
+
+.price_main thead th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+.price_main thead th:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+.price_main thead th,
+.price_main tbody td {
+    padding: 11px 21px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.price_main tbody td {
+    color: #666666;
+    font-family: "Arial";
+}
+
+.price_main tbody tr {
+    background-color: #e4e4ec;
+}
+
+.price_main tbody tr:hover>td {
+    background-color: #fd8300;
+    color: #ffffff;
+}
+
+.price_main tbody tr+tr {
+    border-top: 1px solid #cdcddd;
+}
+
+.price_main thead th:last-child,
+.price_main tbody td:last-child {
+    text-align: right;
+}
+
+.price_main tbody tr:last-child>td:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+.price_main tbody tr:last-child>td:last-child {
+    border-radius: 0 0 3px;
+}
+
+.price_footer p {
+    width: 45%;
+    padding-top: 27px;
+    margin-bottom: 24px;
+}
+
+.price_footer a {
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+.hrstyle{
+    margin: 33px 0 31px 0;
+}
+
+.projects-pad{
+    padding-bottom: 46px;
 }
