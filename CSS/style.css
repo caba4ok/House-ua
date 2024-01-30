@@ -170,6 +170,7 @@ a.inst:hover {
 .header-social {
     align-items: center;
     padding: 31px 0;
+    box-shadow: (0 0 5px rgba(0,0,0,0.1));
 }
 
 .phone,
@@ -206,7 +207,8 @@ a.inst:hover {
     background-position: -92px -2px;
 }
 
-.mail {
+.mail,
+.mailstyle {
     position: relative;
     padding-left: 15px;
 }
@@ -228,11 +230,13 @@ a.inst:hover {
     font-weight: bold;
 }
 
-.mail p:first-child {
+.mail p:first-child,
+.mailstyle p:first-child {
     text-decoration: underline;
 }
 
 .mail a,
+.mailstyle a,
 .cta a {
     font-size: 16px;
     line-height: 1.5em;
@@ -460,6 +464,11 @@ a.inst:hover {
     padding: 42px 0 55px 0;
 }
 
+.contactmail{
+    display: flex;
+    column-gap: 60px;
+}
+
 .bottom-list a {
     font-size: 14px;
     line-height: 1.9em;
@@ -488,7 +497,7 @@ a.inst:hover {
     font-weight: 700;
 }
 
-.price_header p {
+.pstyle {
     margin-bottom: 26px;
 }
 
@@ -525,7 +534,6 @@ a.inst:hover {
     line-height: 24px;
     text-align: left;
     color: #ffffff;
-    font-weight: 700;
 }
 
 .price_main tbody td {
