@@ -472,6 +472,10 @@ a.inst:hover {
     column-gap: 60px;
 }
 
+.mailstyle {
+    padding-left: 26px;
+}
+
 .bottom-list a {
     font-size: 14px;
     line-height: 1.9em;
