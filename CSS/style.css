@@ -355,7 +355,7 @@ a.inst:hover {
     padding: 11px 16px;
     background-color: #1f1f56;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -571,13 +571,17 @@ a.inst:hover {
     border-radius: 0 0 3px;
 }
 
-.price_footer p {
+.price_footer p:first-child {
+    padding-top: 27px;
+}
+
+.price_footer p:last-child {
     width: 45%;
     padding-top: 27px;
-    margin-bottom: 24px;
 }
 
 .price_footer a {
+    margin-top: 24px;
     font-size: 14px;
     line-height: 1.7em;
 }
