@@ -167,10 +167,13 @@ a.inst:hover {
     background-position: -35px -23px;
 }
 
+.header-shadow {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 .header-social {
     align-items: center;
     padding: 31px 0;
-    box-shadow: (0 0 5px rgba(0,0,0,0.1));
 }
 
 .phone,
@@ -455,7 +458,7 @@ a.inst:hover {
 
 .house p {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
 }
 
@@ -464,7 +467,7 @@ a.inst:hover {
     padding: 42px 0 55px 0;
 }
 
-.contactmail{
+.contactmail {
     display: flex;
     column-gap: 60px;
 }
@@ -492,6 +495,7 @@ a.inst:hover {
 }
 
 .price_header h2 {
+    padding-top: 40px;
     padding-bottom: 22px;
     color: #24242b;
     font-weight: 700;
@@ -504,7 +508,7 @@ a.inst:hover {
 .price p,
 .price_footer p {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #666666;
 }
 
@@ -531,7 +535,7 @@ a.inst:hover {
 .price_main tbody td {
     padding: 11px 21px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     text-align: left;
     color: #ffffff;
 }
@@ -578,10 +582,10 @@ a.inst:hover {
     line-height: 1.7em;
 }
 
-.hrstyle{
+.hrstyle {
     margin: 33px 0 31px 0;
 }
 
-.projects-pad{
+.projects-pad {
     padding-bottom: 46px;
 }
