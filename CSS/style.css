@@ -226,7 +226,8 @@ a.inst:hover {
     background-color: #e4e4ec;
 }
 
-.call-number a {
+.call-number a,
+.number {
     font-size: 18px;
     line-height: 1.3em;
     color: #25252c;
@@ -239,6 +240,7 @@ a.inst:hover {
 }
 
 .mail a,
+.office a:last-child,
 .mailstyle a,
 .cta a {
     font-size: 16px;
@@ -596,4 +598,85 @@ a.inst:hover {
 
 .projects-pad {
     padding-bottom: 46px;
+}
+
+.concttop {
+    padding-bottom: 35px;
+}
+
+.concttop h2 {
+    padding-top: 41px;
+    padding-bottom: 27px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.office p:first-child,
+.consultatia p:first-child,
+.rekvisits p:first-child {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #24242b;
+    padding-bottom: 19px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.office p:nth-child(2) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    padding-bottom: 14px;
+}
+
+.office a:first-child {
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+.office a.number:nth-child(2) {
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+.office a:last-child {
+    text-decoration: underline;
+}
+
+.mar {
+    margin-top: 14px;
+}
+
+.rekvisits p:nth-child(2),
+.rekvisits p:last-child {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+
+.rekvisits p:nth-child(2) {
+    width: 95%;
+}
+
+.rekvisits p:last-child{
+    width: 60%;
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+    max-width: 466px;
+    min-height: 369px;
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -70px;
+    border: none;
 }
