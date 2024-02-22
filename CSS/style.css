@@ -650,6 +650,10 @@ a.inst:hover {
     margin-top: 14px;
 }
 
+.top_number {
+    margin-bottom: 16px;
+}
+
 .rekvisits p:nth-child(2),
 .rekvisits p:last-child {
     margin-bottom: 20px;
@@ -675,7 +679,8 @@ a.inst:hover {
     overflow: hidden;
     max-width: 466px;
     width: 100%;
-    min-height: 369px;
+    min-height: 379px;
+    max-height: 500px;
 }
 
 iframe {
@@ -700,7 +705,7 @@ textarea {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 8px;
-    padding: 15px 16px;
+    padding: 11px 16px;
 }
 
 .order input::placeholder,
@@ -714,6 +719,7 @@ textarea::placeholder {
 
 textarea {
     height: 106px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .inp {
@@ -731,17 +737,26 @@ textarea {
 }
 
 .checkbox button {
+    transition: all .5s ease-in-out;
     border-radius: 21px;
     background-color: #fd8300;
     padding: 9px 30px;
     margin-right: 32px;
-    border: none;
+    border: 1px solid transparent;
     font-size: 14px;
     line-height: 1.7em;
+    box-sizing: border-box;
     color: #ffffff;
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+}
+
+.checkbox button:hover{
+    border: 1px solid #fd8300;
+    background-color: #fff;
+    color: #25252c;
+    transform: scale(1.05);
 }
 
 .lastnews {
@@ -770,10 +785,10 @@ textarea {
 .chbox:checked + .lastnews::after{
     content: "";
     position: absolute;
-    top: 0;
-    left: 3px;
-    width: 9px;
-    height: 11px;
+    top: 2px;
+    left: 5px;
+    width: 5px;
+    height: 8px;
     border-top: 2px solid #1f1f56;
     border-left: 2px solid #1f1f56;
     transform: rotate(-135deg);
