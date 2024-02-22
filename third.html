@@ -78,13 +78,23 @@
             </div>
             <div class="formap wrapper flex-between">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1LhHn4Ffq1Dwr5flAMuCXMC0wQ-Wt9LM&ehbc=2E312F"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/d/embed?mid=1LhHn4Ffq1Dwr5flAMuCXMC0wQ-Wt9LM&ehbc=2E312F"></iframe>
                 </div>
                 <div class="order">
                     <h2>Форма зворотнього зв’язку</h2>
-
                     <form action="" method="get">
-                        <input type="text">
+                        <div class="inp">
+                            <input type="text" placeholder="Ваше ім’я">
+                            <input type="text" placeholder="Телефон">
+                        </div>
+                        <input type="text" placeholder="Тема повідомлення" class="tema">
+                        <textarea cols="30" rows="10" placeholder="Текст"></textarea>
+                        <div class="checkbox flex-between">
+                            <button type="submit">Відправити</button>
+                            <input type="checkbox" id="check" class="chbox">
+                            <label for="check" class="lastnews">Я бажаю отримувати останні новини</label>
+                        </div>
                     </form>
                 </div>
             </div>
